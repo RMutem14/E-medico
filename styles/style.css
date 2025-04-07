@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../images/alexandr-podvalny-tE7_jvK-_YU-unsplash.jpg);
+    background-position: center;
+    font-family: "Inter", sans-serif;
+}
+
+.page-inscription,
+.page-connexion{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+form{
+    background-color: #E3E6E9;
+    color: #34495E;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+    box-shadow: 5px 5px 5px #34495E;
+}
+
+.content{
+    padding: 3rem;
+}
+
+.content h2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#contenaire{
+    display: flex;
+    flex-direction: column;
+    padding:2rem 0;
+}
+
+#contenaire label{
+    font-size: 1.05rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+
+}
+
+#contenaire input{
+    background-color: #CAD3DC;
+    border: none;
+    border-bottom:3px solid #4A90E2;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#contenaire button{
+    background-color: #4A90E2;
+    border: none;
+    color: #34495E;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+    transition: background-color 0.5s ease;
+}
+
+#contenaire button:hover{
+    background-color: #357ABD;
+    color: black;
+}
+
+.second{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.1rem 0;
+}
+
+.second::before,
+.second::after{
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid #34495E;
+}
+
+.second span{
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.compte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.compte a{
+    background-color: #4A90E2;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+
+.compte a:hover{
+    background-color: #357ABD;
+    color: black;
+}
+
+.compte a i{
+    color: #34495E;
+}
+
+.connexion {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width:768px) {
+    .fond{
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .page-inscription,
+    .page-connexion{
+        width: 350px;
+    }
+
+    .content h2{
+        font-size: 1.4rem;
+    }
+
+    .content label{
+        font-size: 1rem;
+    }
+
+    .compte a i{
+        width: 30px;
+    }
+}
+
+@media (max-width:465px) {
+    .page-inscription,
+    .page-connexion{
+        width: 300px;
+    }
+}
+
+@media (min-width:1024px) {
+    .page-inscription,
+    .page-connexion{
+        width: 900px;
+        display: flex;
+        background-color: #357ABD;
+        box-shadow: 5px 5px 5px #34495E;
+    }
+    .fond{
+        background-image: url(../images/fond-inscription.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: block;
+        width: 50%;
+    }
+
+    .fonds{
+        background-image: url(../images/fond-connexion.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: block;
+        width: 50%;
+    }
+
+    form{
+        width: 50%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,195 @@
+@media (max-width: 768px) {
+  header {
+    background-color: #7590ae;
+    width: 100%;
+    height: 10vh;
+  }
+
+  .baniere {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .baniere .contenaire {
+    background-color: #7590ae;
+    padding: 1rem;
+  }
+
+  .baniere h1 {
+    display: none;
+  }
+
+  .baniere .content {
+    background-image: url(../images/ban-mobile.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .baniere .details {
+    width: 80%;
+  }
+
+  .baniere .ct {
+    margin-top: 1rem;
+  }
+
+  .card-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
+  .card-content {
+    width: 300px;
+    height: 30vh;
+    background-image: url(../images/baniere-principale.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .card{
+    position: relative;
+  }
+
+  .card .fleche {
+    background-color: #4a90e2;
+    position: absolute;
+    bottom: -55px;
+    right: 5px;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card .fleche i {
+    padding: 1rem;
+  }
+
+  .profil {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+
+  .profil ul {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .baniere {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  .baniere .contenaire {
+    width: 800px;
+    background-color: #7590ae;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px #34495e;
+    margin-bottom: 2rem;
+  }
+
+  .baniere .content {
+    align-items: center;
+    background-image: url(../images/baniere-principale.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-radius: 30px;
+    color: #f8f9fa;
+    display: flex;
+    padding: 2rem;
+    width: 800px;
+  }
+
+  .baniere .details {
+    width: 400px;
+  }
+
+  .baniere h1 {
+    margin-bottom: 3rem;
+  }
+
+  .baniere p {
+    margin-top: 1.5rem;
+  }
+
+  .baniere .ct:hover {
+    background-color: #357abd;
+  }
+
+  .card-block {
+    margin-left: 2rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    overflow: hidden;
+    width: 800px;
+  }
+
+  .card-content {
+    background-image: url(../images/baniere-principale.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .card-content .details {
+    width: 100px;
+  }
+
+  .card{
+    position: relative;
+  }
+
+  .card .fleche {
+    background-color: #4a90e2;
+    position: absolute;
+    bottom: -55px;
+    right: 5px;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card .fleche i {
+    padding: 1rem;
+  }
+}
